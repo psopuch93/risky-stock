@@ -34,10 +34,39 @@
 	echo "<p> <b> Bitcoins</b>: ".$_SESSION['bitcoin'];
 	echo "| <b> Złoto</b>: ".$_SESSION['zloto'];
 	echo "| <b> Srebro</b>: ".$_SESSION['srebro']."</p>";
-	
-	echo "<p><b>Email: </b>:".$_SESSION['email'];
+	echo "<p><b>Email: </b>".$_SESSION['email'];
 	echo "| <b> Dni premium: </b>: ".$_SESSION['dnipremium']."</p>";
 	
 ?>
+
+<div class="Welcome">
+<?php
+	$date = date('H:i:s');
+	echo "<br>" . $date;
+	echo "<br>" ;
+	
+	function newValues(){
+		global $bitcoin_value, $zloto_value, $srebro_value;
+		$bitcoin_value = rand(1, 100);
+		$zloto_value = rand(1, 100);
+		$srebro_value = rand(1,100);
+	}
+	
+	$bitcoin_value = 0; echo "<br>";
+	$zloto_value = 0; echo "<br>";
+	$srebro_value = 0; echo "<br>";
+	if ($date =='20:02:15') {
+		newValues();
+		
+	}
+	
+	echo "Dziesiejsze ceny: " ."<br><br>"
+	."Bitcoin: "  .$bitcoin_value ."<br>"
+	."Złoto: " .$zloto_value ."<br>" ."Srebro: " .$srebro_value;
+	
+	
+	
+?> 
+</div>
 </body>
 </html>

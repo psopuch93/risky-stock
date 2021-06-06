@@ -1,0 +1,57 @@
+/* CSS RESET */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/* CSS Variables */
+
+:root{
+	--navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+	display: flex;
+}
+#login_form{	
+	text-align: center;
+	margin-top: 300px;
+}
+#source_info_container{
+	padding: 100px 20px 0px 20px;
+    height: 250px;
+}
+.inner_info_container{
+	float: left;
+    width: 33.3%;
+    height: 100%;
+}
+.inner_info_container p{
+	text-align: center;
+	font-size: 1.6vw;
+	font-style: bold;
+}
+#source_info_container div:first-child{
+	background-color: grey;
+}
+#source_info_container div:nth-child(2){
+	background-color: yellow;
+}
+#source_info_container div:last-child{
+	background-color: blue;
+}
+/* Navigation Bar: Logo and Image */
+
+/* Navigation Bar: List Styling */
+#logo{
+	margin: 34px 45px;
+	padding: 0;
+}
+
+#logo img{
+	margin: 34px 45px;
+	padding: 0;
+	
+}
+
